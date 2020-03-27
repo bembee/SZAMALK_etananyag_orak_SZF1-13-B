@@ -4,6 +4,9 @@
 // @description    Menüpontot készít a tényleges óráninkról
 // @version        0.9
 // @include        https://*etananyag.szamalk-szalezi*
+// @homepage       https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/
+// @updateURL      https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/raw/master/szamalk.user.js
+// @downloadURL    https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/raw/master/szamalk.user.js
 // ==/UserScript==
 
 var ul = document.querySelector('.dropdown-menu');
