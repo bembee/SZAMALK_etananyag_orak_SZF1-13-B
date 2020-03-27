@@ -2,7 +2,7 @@
 // @name           SZÁMALK etananyag órák SZF1/13/B!
 // @author         Simon Gergely
 // @description    Menüpontot készít a tényleges óráninkról
-// @version        1.0
+// @version        1.1
 // @include        https://*etananyag.szamalk-szalezi*
 // @homepage       https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/
 // @updateURL      https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/raw/master/szamalk.user.js
@@ -66,3 +66,9 @@ ul.appendChild(kilenc);
 var tiz = document.createElement('li');
 tiz.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/view.php?id=472">Webprogramozás</a>';
 ul.appendChild(tiz);
+
+var tizenegy = document.createElement('p');
+tizenegy.style.marginBottom = "0px";
+tizenegy.style.textAlign = "center";
+tizenegy.innerHTML = '<font size="1">Created by Simon Gergely</font>';
+ul.appendChild(tizenegy);
