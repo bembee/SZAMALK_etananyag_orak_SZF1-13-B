@@ -60,5 +60,9 @@ nyolc.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.sza
 ul.appendChild(nyolc);
 
 var kilenc = document.createElement('li');
-kilenc.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/view.php?id=472">Webprogramozás</a>';
+kilenc.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/view.php?id=26">Szakmai orientáció 1. és 3.</a>';
 ul.appendChild(kilenc);
+
+var tiz = document.createElement('li');
+tiz.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/view.php?id=472">Webprogramozás</a>';
+ul.appendChild(tiz);
