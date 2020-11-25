@@ -39,7 +39,7 @@ for (var i = 0; i < szamok.length; i++) {
 var a = document.createElement('p');
 a.style.marginBottom = "0px";
 a.style.textAlign = "center";
-a.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/index.php?categoryid=103"><font size="2">Szoftverfejlesztő és -tesztelő B összes</font></a>';
+a.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/index.php?categoryid=104"><font size="2">Szoftverfejlesztő és -tesztelő B összes</font></a>';
 ul.appendChild(a);
 
 var b = document.createElement('p');
