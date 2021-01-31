@@ -2,7 +2,7 @@
 // @name           SZÁMALK etananyag órák SZF1/13/B!
 // @author         Simon Gergely
 // @description    Menüpontot készít az SZF1/13/B tényleges óráiról
-// @version        1.2
+// @version        1.3
 // @include        https://*etananyag.szamalk-szalezi*
 // @homepage       https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/
 // @updateURL      https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/raw/master/szamalk.user.js
@@ -28,8 +28,8 @@ var ul = document.getElementById("custom_menu");
 
 
 //Adatfeltöltés
-var szamok = [700, 703, 705, 693, 694, 695, 697, 698, 868, 696, 472];
-var nevek = ['Adatbázis kezelés I.', 'Angol', 'Etika', 'Gépszerelés (Informatikai ismeretek)', 'Hálózat I. elmélet', 'Hálózat I. gyakorlat', 'IKT projektmunka I./1', 'IKT projektmunka I./2', 'Java Programozás', 'Python programozás', 'Webprogramozás'];
+var szamok = [700, 703, 705, 693, 694, 695, 699, 879, 472, 880];
+var nevek = ['Adatbázis kezelés I.', 'Angol', 'Etika', 'Gépszerelés (Informatikai ismeretek)', 'Hálózat I. elmélet', 'Hálózat I. gyakorlat', 'Java Programozás', 'Szoftvertesztelés/Hálózat elmélet', 'Webprogramozás', 'WP Orientáció '];
 for (var i = 0; i < szamok.length; i++) {
     var li = document.createElement('li');
     li.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/view.php?id=' + szamok[i] + '">' + nevek[i] + '</a>';
@@ -39,11 +39,25 @@ for (var i = 0; i < szamok.length; i++) {
 var a = document.createElement('p');
 a.style.marginBottom = "0px";
 a.style.textAlign = "center";
-a.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/index.php?categoryid=104"><font size="2">Szoftverfejlesztő és -tesztelő B összes</font></a>';
+a.innerHTML = '<font size="1">Első féléves tárgyak</font>';
 ul.appendChild(a);
+
+szamok = [697, 698, 868, 696];
+nevek = ['IKT projektmunka I./1', 'IKT projektmunka I./2', 'Java Programozás', 'Python programozás'];
+for (i = 0; i < szamok.length; i++) {
+    li = document.createElement('li');
+    li.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/view.php?id=' + szamok[i] + '">' + nevek[i] + '</a>';
+    ul.appendChild(li);
+}
 
 var b = document.createElement('p');
 b.style.marginBottom = "0px";
 b.style.textAlign = "center";
-b.innerHTML = '<font size="1">Created by Simon Gergely</font>';
+b.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/index.php?categoryid=104"><font size="2">Szoftverfejlesztő és -tesztelő B összes</font></a>';
 ul.appendChild(b);
+
+var c = document.createElement('p');
+c.style.marginBottom = "0px";
+c.style.textAlign = "center";
+c.innerHTML = '<font size="1">Created by Simon Gergely</font>';
+ul.appendChild(c);
