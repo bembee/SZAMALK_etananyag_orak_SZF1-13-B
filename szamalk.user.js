@@ -2,7 +2,7 @@
 // @name           SZÁMALK etananyag órák SZF1/13/B!
 // @author         Simon Gergely
 // @description    Menüpontot készít az SZF1/13/B tényleges óráiról
-// @version        1.3
+// @version        1.4
 // @include        https://*etananyag.szamalk-szalezi*
 // @homepage       https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/
 // @updateURL      https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/raw/master/szamalk.user.js
@@ -28,8 +28,8 @@ var ul = document.getElementById("custom_menu");
 
 
 //Adatfeltöltés
-var szamok = [700, 703, 705, 693, 694, 695, 699, 879, 472, 880];
-var nevek = ['Adatbázis kezelés I.', 'Angol', 'Etika', 'Gépszerelés (Informatikai ismeretek)', 'Hálózat I. elmélet', 'Hálózat I. gyakorlat', 'Java Programozás', 'Szoftvertesztelés/Hálózat elmélet', 'Webprogramozás', 'WP Orientáció '];
+var szamok = [700, 703, 705, 693, 694, 695, 699, "879&section=0", "879&section=1", 472, 880];
+var nevek = ['Adatbázis kezelés I.', 'Angol', 'Etika', 'Gépszerelés (Informatikai ismeretek)', 'Hálózat I. elmélet', 'Hálózat I. gyakorlat', 'Java Programozás', 'Hálózat elmélet', 'Szoftvertesztelés', 'Webprogramozás', 'WP Orientáció '];
 for (var i = 0; i < szamok.length; i++) {
     var li = document.createElement('li');
     li.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/view.php?id=' + szamok[i] + '">' + nevek[i] + '</a>';
