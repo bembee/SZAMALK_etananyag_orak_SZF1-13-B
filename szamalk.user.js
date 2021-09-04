@@ -2,8 +2,8 @@
 // @name           SZÁMALK etananyag órák SZF1/13/B!
 // @author         Simon Gergely
 // @description    Menüpontot készít az SZF1/13/B tényleges óráiról
-// @version        1.5
-// @include        https://*etananyag.szamalk-szalezi*
+// @version        1.5.1
+// @include        https://*etananyag2.szamalk-szalezi*
 // @homepage       https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/
 // @updateURL      https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/releases/latest/download/szamalk.user.js
 // @downloadURL    https://github.com/bembee/SZAMALK_etananyag_orak_SZF1-13-B/releases/latest/download/szamalk.user.js
@@ -37,7 +37,7 @@ function letrehozSzoveg(szoveg) {
 function linkBeallitas(szamok, nevek) {
     for (var i = 0; i < szamok.length; i++) {
         li = document.createElement('li');
-        li.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/view.php?id=' + szamok[i] + '">' + nevek[i] + '</a>';
+        li.innerHTML = '<a title="" class="dropdown-item" href="https://etananyag2.szamalk-szalezi.hu/course/view.php?id=' + szamok[i] + '">' + nevek[i] + '</a>';
         ul.appendChild(li);
     }
 }
@@ -48,5 +48,5 @@ letrehozSzoveg('<font size="1">Első féléves tárgyak</font>');
 
 linkBeallitas([697, 698, 868, 696], ['IKT projektmunka I./1', 'IKT projektmunka I./2', 'Java Programozás', 'Python programozás']);
 
-letrehozSzoveg('<a title="" class="dropdown-item" href="https://etananyag.szamalk-szalezi.hu/course/index.php?categoryid=104"><font size="2">Szoftverfejlesztő és -tesztelő B összes</font></a>');
+letrehozSzoveg('<a title="" class="dropdown-item" href="https://etananyag2.szamalk-szalezi.hu/course/index.php?categoryid=104"><font size="2">Szoftverfejlesztő és -tesztelő B összes</font></a>');
 letrehozSzoveg('<font size="1"><a href="https://github.com/bembee">Created by Simon Gergely</a></font>');
